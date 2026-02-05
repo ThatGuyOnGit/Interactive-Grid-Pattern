@@ -28,8 +28,8 @@ class GridPatternRecog:
 
     def if_clicked(self, x, y):
         """chks if cursor is in 20 px radius of any of prevailing dots..."""
-        for i, (dx, dy) in enumerate(self.dot_coords):
-            if abs(x - dx) < 20 and abs(y - dy) < 20:
+        for i, (dx,dy) in enumerate(self.dot_coords):
+            if abs(x -dx)<20 and abs(y-dy)<20:
                 return i
         return None
 
